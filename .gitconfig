@@ -1,0 +1,29 @@
+[user]
+	email = bklinton14@gmail.com
+	name = Bill Klinton
+[core]
+	editor = code -n -w
+	whitespace = black-at-eol,black-at-eof,tab-in-indent
+[alias]
+	fetchall = fetch --all --prune
+	lognice = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -10
+	st = status
+	pr = pull
+	co = checkout
+	up = pull --rebase --prune
+	recommit = commit -a --amend --no-edit    
+	ec = config --global -e
+	up = !git pull --rebase --prune $@ && git submodule update --init --recursive
+	cob = checkout -b
+	cm = !git add -A && git commit -m
+[push]
+	default = matching
+[mergetool]
+	prompt = true
+	conflictstyle = diff3
+[fetch]
+	prune = true
+[pull]
+	rebase = true
+[rerere]
+	enabled = true
