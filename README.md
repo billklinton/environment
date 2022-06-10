@@ -45,7 +45,7 @@ In this case I used the User folder to place the theme file.
 Set-ExecutionPolicy Unrestricted
 Install-Module PSReadLine -Force -SkipPublisherCheck -AllowPrerelease
 Install-Module posh-git -Force -SkipPublisherCheck -AllowPrerelease
-winget install oh-my-posh
+winget install --id JanDeDobbeleer.OhMyPosh
 Install-Module -Name Terminal-Icons -Repository PSGallery
 
 Import-Module posh-git
